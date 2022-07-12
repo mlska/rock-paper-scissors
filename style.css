@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto mono';
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+h1,h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 16px 0;
+}
+
+.selection {
+    display: flex;
+    justify-content: center;
+}
+
+.selection img {
+    margin: 8px;
+    transition: .2s
+}
+
+.selection img.selected {
+    outline: 4px solid green;
+}
+
+.selection img:hover {
+    opacity: 0.7;
+}
+
+button {
+    display: block;
+    margin: 32px auto;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 16px 32px;
+    transition: .2s;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+.panelwrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    text-align: center;
+    margin: 16px 0;
+}
+
+/* Panel lewy */
+
+.leftpanel, .rightpanel {
+    flex-basis: 50%;
+    padding: 0 128px;
+    text-align: center;
+}
+
+.leftpanel .caption, .leftpanel .winner {
+    
+    margin: 16px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.leftpanel .caption {
+    font-weight: bold;
+}
+
+.leftpanel .winner {
+    font-weight: bold;
+    font-size: 36px;
+    background-color: #eee;
+    border-radius: 16px;
+}
+
+
+
+/* Panel prawy */
+
+.rightpanel p span {
+    font-weight: bold;
+}
